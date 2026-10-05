@@ -28,6 +28,7 @@ import {
 import LogoScroller from '@/components/LogoScroller';
 import QuoteSection from '@/components/QuoteSection';
 import { useRequestModal } from '@/components/LayoutClientWrapper';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export default function HomePage() {
   const { openModal } = useRequestModal();
@@ -81,31 +82,32 @@ export default function HomePage() {
               <button
                 type="button"
                 onClick={openModal}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#FF7A00] hover:bg-[#E06900] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl shadow-[0_10px_25px_rgba(255,122,0,0.35)] hover:shadow-[0_12px_30px_rgba(255,122,0,0.5)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#FF7A00] hover:bg-[#E06900] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl shadow-[0_8px_20px_rgba(255,122,0,0.3)] hover:shadow-[0_12px_28px_rgba(255,122,0,0.45)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
               >
                 <Truck className="w-4 h-4 shrink-0" />
                 <span>Request A Vehicle</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
               </button>
 
-              {/* WhatsApp Action */}
+              {/* WhatsApp Action with Official WhatsApp Icon */}
               <a
                 href="https://wa.me/919053529200?text=Hello,%20I%20have%20an%20urgent%20logistics%20requirement."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_8px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_10px_25px_rgba(37,211,102,0.45)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_6px_18px_rgba(37,211,102,0.25)] hover:shadow-[0_10px_22px_rgba(37,211,102,0.35)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
               >
-                <MessageSquare className="w-4 h-4 shrink-0" />
-                <span>WhatsApp Us</span>
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
+                <span>WhatsApp</span>
               </a>
 
-              {/* Secondary Hotline Glass Button */}
+              {/* Call Button: Phone Icon + Number */}
               <a
                 href="tel:9053529200"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white font-display font-bold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl border border-white/20 hover:border-white/40 transition-all duration-300 whitespace-nowrap group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white font-display font-bold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl border border-white/20 hover:border-white/40 transition-all duration-300 whitespace-nowrap group"
+                aria-label="Call +91 9053529200"
               >
-                <Phone className="w-4 h-4 text-amber-400 shrink-0 group-hover:scale-110 transition-transform" />
-                <span>Hotline: +91 9053529200</span>
+                <Phone className="w-4 h-4 text-[#FF7A00] shrink-0 group-hover:scale-110 transition-transform" />
+                <span>+91 9053529200</span>
               </a>
             </div>
 
@@ -128,50 +130,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. OVERLAPPING METRICS BANNER (ELEVATED CARDS WITH MICRO-BORDERS & GLOW) */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 z-20">
-        <div className="bg-white rounded-3xl shadow-2xl border border-slate-200/90 grid grid-cols-2 md:grid-cols-4 p-4 sm:p-6 gap-4 sm:gap-6">
+      {/* 2. OVERLAPPING METRICS BANNER (RESPONSIVE & BALANCED) */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-12 z-20">
+        <div className="bg-white rounded-3xl shadow-xl border border-slate-200/90 grid grid-cols-2 lg:grid-cols-4 p-4 sm:p-6 gap-3 sm:gap-6">
           {/* Stat 1 */}
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/70 border border-slate-200/70 hover:bg-white hover:border-brand-300 hover:shadow-md transition-all duration-200">
-            <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-blue-100 text-brand-600 flex items-center justify-center shrink-0 shadow-sm">
-              <Users className="w-7 h-7" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-brand-300 transition-all duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center shrink-0">
+              <Users className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-none">10,000+</p>
-              <p className="text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Verified Drivers</p>
+            <div className="min-w-0">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">10,000+</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Verified Drivers</p>
             </div>
           </div>
 
           {/* Stat 2 */}
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/70 border border-slate-200/70 hover:bg-white hover:border-amber-300 hover:shadow-md transition-all duration-200">
-            <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 shadow-sm">
-              <Building className="w-7 h-7" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-amber-300 transition-all duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+              <Building className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-none">Jhajjar HQ</p>
-              <p className="text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Operational Dispatch</p>
+            <div className="min-w-0">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">Jhajjar HQ</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Central Dispatch</p>
             </div>
           </div>
 
           {/* Stat 3 */}
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/70 border border-slate-200/70 hover:bg-white hover:border-emerald-300 hover:shadow-md transition-all duration-200">
-            <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm">
-              <ShieldCheck className="w-7 h-7" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-emerald-300 transition-all duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-none">100%</p>
-              <p className="text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Zero Towing Damage</p>
+            <div className="min-w-0">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">100%</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Zero-Damage Record</p>
             </div>
           </div>
 
           {/* Stat 4 */}
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/70 border border-slate-200/70 hover:bg-white hover:border-purple-300 hover:shadow-md transition-all duration-200">
-            <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 shadow-sm">
-              <Clock className="w-7 h-7" />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-purple-300 transition-all duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+              <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div>
-              <p className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-none">24/7</p>
-              <p className="text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Active Control Room</p>
+            <div className="min-w-0">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">24/7</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Active Control Desk</p>
             </div>
           </div>
         </div>
@@ -467,26 +469,25 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-8 sm:p-12 lg:p-14">
               {/* Left Column: Information & Corridor Connectivity */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#FF7A00]/15 border border-[#FF7A00]/30 text-[#FF7A00] text-xs font-extrabold uppercase tracking-widest">
-                  <span className="w-2 h-2 rounded-full bg-[#FF7A00] animate-ping" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/90 border border-slate-700/80 text-slate-300 text-xs font-bold uppercase tracking-wider">
+                  <span className="w-2 h-2 rounded-full bg-brand-500" />
                   <span>Central Operations Headquarters</span>
                 </div>
 
-                <h3 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight uppercase">
+                <h3 className="font-display font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-snug uppercase">
                   Strategically Positioned In{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7A00] via-amber-400 to-orange-300">
+                  <span className="text-white border-b-2 border-brand-500 pb-0.5">
                     Jhajjar, Haryana
-                  </span>{' '}
-                  <span className="text-slate-400 text-lg sm:text-xl font-mono font-bold block sm:inline">(PIN: 124103)</span>
+                  </span>
                 </h3>
 
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-                  Direct arterial connectivity to Delhi-NCR, Rajasthan, UP, Punjab, and the Western Freight Corridor. Centralized vehicle staging, driver screening facilities, and rapid corridor deployment.
+                  Direct arterial connectivity to Delhi-NCR, Rajasthan, Uttar Pradesh, Punjab, and the Western Dedicated Freight Corridor. Centralized vehicle staging, driver screening facilities, and rapid corridor deployment (PIN: 124103).
                 </p>
 
                 {/* Corridor Tags / Arterial Connectivity */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
-                  <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2.5">
+                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
                     <Navigation className="w-4 h-4 text-[#FF7A00] shrink-0" />
                     <div>
                       <p className="text-[10px] uppercase font-bold text-slate-400">Arterial Highway</p>
@@ -494,7 +495,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2.5">
+                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
                     <Compass className="w-4 h-4 text-amber-400 shrink-0" />
                     <div>
                       <p className="text-[10px] uppercase font-bold text-slate-400">Delhi-NCR Access</p>
@@ -502,7 +503,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center gap-2.5 col-span-2 sm:col-span-1">
+                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5 col-span-2 sm:col-span-1">
                     <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                     <div>
                       <p className="text-[10px] uppercase font-bold text-slate-400">Western Corridor</p>
@@ -511,29 +512,32 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Buttons */}
-                <div className="flex flex-wrap items-center gap-3.5 pt-2">
+                {/* Action Buttons: Crisp & Corporate */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  {/* Call Button: Phone Icon + Number Only */}
                   <a
                     href="tel:9053529200"
-                    className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#FF7A00] hover:bg-[#E06900] text-white font-extrabold text-[13px] uppercase tracking-wider shadow-[0_10px_25px_rgba(255,122,0,0.35)] hover:shadow-[0_12px_30px_rgba(255,122,0,0.5)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-extrabold text-[13px] uppercase tracking-wider border border-slate-700 hover:border-slate-600 transition-all active:translate-y-0 whitespace-nowrap"
+                    aria-label="Call +91 9053529200"
                   >
-                    <Phone className="w-4 h-4" />
-                    <span>Call Hotline: +91 9053529200</span>
+                    <Phone className="w-4 h-4 text-[#FF7A00]" />
+                    <span>+91 9053529200</span>
                   </a>
 
+                  {/* WhatsApp Button: WhatsApp Icon */}
                   <a
                     href="https://wa.me/919053529200?text=Hello%20VT%20Logistic%20Services,%20I%20would%20like%20to%20discuss%20a%20logistics%20requirement."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-[13px] uppercase tracking-wider shadow-[0_8px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_10px_25px_rgba(37,211,102,0.45)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-[13px] uppercase tracking-wider shadow-sm transition-all active:translate-y-0 whitespace-nowrap"
                   >
-                    <MessageSquare className="w-4 h-4" />
-                    <span>WhatsApp HQ</span>
+                    <WhatsAppIcon className="w-4 h-4" />
+                    <span>WhatsApp</span>
                   </a>
 
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-[13px] uppercase tracking-wider border border-white/20 hover:border-white/40 transition-all duration-300 whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-[13px] uppercase tracking-wider border border-white/20 hover:border-white/30 transition-all whitespace-nowrap"
                   >
                     <span>View HQ Details</span>
                     <ArrowRight className="w-4 h-4" />

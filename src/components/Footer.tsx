@@ -25,9 +25,10 @@ export default function Footer({ onRequestVehicle }: { onRequestVehicle?: () => 
             <a
               href="tel:9053529200"
               className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-3 rounded-xl shadow-md transition-all uppercase tracking-wider"
+              aria-label="Call +91 9053529200"
             >
               <Phone className="w-4 h-4 text-brand-600" />
-              <span>Call Hotline</span>
+              <span>+91 9053529200</span>
             </a>
             <button
               type="button"

@@ -22,6 +22,7 @@ import {
   Calendar,
   Mail,
 } from 'lucide-react';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 interface RequestVehicleModalProps {
   isOpen: boolean;
@@ -186,7 +187,7 @@ export default function RequestVehicleModal({ isOpen, onClose }: RequestVehicleM
                   rel="noopener noreferrer"
                   className="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-500/20"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   <span>Chat On WhatsApp (+91 9053529200)</span>
                 </a>
               )}

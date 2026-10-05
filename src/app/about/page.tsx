@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import LogoScroller from '@/components/LogoScroller';
 import { useRequestModal } from '@/components/LayoutClientWrapper';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export default function AboutPage() {
   const { openModal } = useRequestModal();
@@ -77,10 +78,10 @@ export default function AboutPage() {
                   href="https://wa.me/919053529200?text=Hello%20VT%20Logistic%20Services,%20I%20would%20like%20to%20inquire%20about%20corporate%20fleet%20and%20driver%20solutions."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_8px_20px_rgba(37,211,102,0.3)] hover:shadow-[0_10px_25px_rgba(37,211,102,0.45)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_6px_18px_rgba(37,211,102,0.25)] hover:shadow-[0_10px_22px_rgba(37,211,102,0.35)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
                 >
-                  <MessageSquare className="w-4 h-4 shrink-0" />
-                  <span>WhatsApp Us</span>
+                  <WhatsAppIcon className="w-4 h-4 shrink-0" />
+                  <span>WhatsApp</span>
                 </a>
 
                 <a
@@ -650,8 +651,8 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-sm uppercase tracking-wider shadow-md shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap inline-flex items-center gap-2"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span>Chat On WhatsApp</span>
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>WhatsApp</span>
               </a>
 
               <Link

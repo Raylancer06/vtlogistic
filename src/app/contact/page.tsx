@@ -23,6 +23,7 @@ import {
   FileText,
   Check,
 } from 'lucide-react';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -196,7 +197,7 @@ export default function ContactPage() {
                     className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-emerald-50 border border-slate-200/80 transition-all group/item"
                   >
                     <div className="w-11 h-11 rounded-xl bg-emerald-100 group-hover/item:bg-[#25D366] text-[#25D366] group-hover/item:text-white flex items-center justify-center shrink-0 transition-colors shadow-sm">
-                      <MessageSquare className="w-5 h-5" />
+                      <WhatsAppIcon className="w-5 h-5" />
                     </div>
                     <div>
                       <span className="text-xs uppercase font-bold text-slate-500 block">WhatsApp Priority Line</span>
@@ -286,7 +287,7 @@ export default function ContactPage() {
                         rel="noopener noreferrer"
                         className="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-500/20"
                       >
-                        <MessageSquare className="w-4 h-4" />
+                        <WhatsAppIcon className="w-4 h-4" />
                         <span>Chat On WhatsApp (+91 9053529200)</span>
                       </a>
                     )}
@@ -624,7 +625,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white font-extrabold text-xs uppercase tracking-wider hover:bg-[#20BA5A] transition-colors shadow-md"
               >
-                <MessageSquare className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>WhatsApp Directions</span>
               </a>
             </div>

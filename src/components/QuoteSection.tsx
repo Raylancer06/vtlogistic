@@ -22,6 +22,7 @@ import {
   AlertCircle,
   Mail,
 } from 'lucide-react';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 const CATEGORIES = [
   { id: 'Jockey Movement', label: 'Jockey Movement', icon: Compass, badge: 'Flagship' },
@@ -220,8 +221,8 @@ export default function QuoteSection() {
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider shadow-md transition-all flex items-center gap-1.5"
                 >
-                  <MessageSquare className="w-3.5 h-3.5" />
-                  <span>WhatsApp Now</span>
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </div>
@@ -293,7 +294,7 @@ export default function QuoteSection() {
                         rel="noopener noreferrer"
                         className="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-500/20"
                       >
-                        <MessageSquare className="w-4 h-4" />
+                        <WhatsAppIcon className="w-4 h-4" />
                         <span>Chat On WhatsApp (+91 9053529200)</span>
                       </a>
                     )}
