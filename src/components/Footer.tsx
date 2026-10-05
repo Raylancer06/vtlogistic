@@ -170,11 +170,25 @@ export default function Footer({ onRequestVehicle }: { onRequestVehicle?: () => 
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {new Date().getFullYear()} VT Logistic Services. All rights reserved.{' '}
-            <span className="text-slate-200 font-semibold">Your Trust Our Destination.</span>
-          </p>
+        <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center md:text-left">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+            <p>
+              © {new Date().getFullYear()} VT Logistic Services. All rights reserved.{' '}
+              <span className="text-slate-200 font-semibold">Your Trust Our Destination.</span>
+            </p>
+            <span className="hidden sm:inline text-slate-700">•</span>
+            <p>
+              Design and development by{' '}
+              <a
+                href="https://raylancer.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white font-medium underline decoration-slate-700 hover:decoration-white underline-offset-4 transition-colors"
+              >
+                Raylancer Services
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-6 font-medium">
             <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Terms of Service
