@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
     'https://wa.me/919053529200?text=Hello,%20I%20have%20an%20urgent%20logistics%20requirement%20for%20VT%20Logistic%20Services.';
 
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3">
+    <div className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3">
       {/* Floating Micro Notification Tooltip */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2.5 bg-white text-slate-800 text-xs font-semibold px-4 py-2.5 rounded-2xl shadow-2xl border border-slate-200/90 animate-in fade-in slide-in-from-right-4 duration-300">
