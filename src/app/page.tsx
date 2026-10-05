@@ -37,14 +37,14 @@ export default function HomePage() {
     <div className="w-full">
       {/* 1. HERO SECTION (LOGIXPRESS CALIBER FULL-BLEED CINEMATIC) */}
       <section className="relative w-full min-h-[92vh] flex flex-col justify-center bg-[#060B14] text-white overflow-hidden pt-12 pb-24 md:pb-32">
-        {/* Cinematic HD Fleet Image Generated for VT Logistics */}
+        {/* Cinematic HD Fleet Image for VT Logistics */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero_fleet.jpg"
-            alt="Value Trust Logistics Fleet Terminal"
+            src="/images/truck_freight_hd.jpg"
+            alt="Value Trust Logistics Heavy Commercial Transport Fleet"
             fill
             priority
-            className="object-cover object-center scale-105 animate-pulse-subtle"
+            className="object-cover object-center scale-105"
           />
           {/* Deep Gradient Film Layers for high contrast & readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#060B14] via-[#060B14]/90 to-[#060B14]/40" />
@@ -73,7 +73,7 @@ export default function HomePage() {
 
             {/* Subtitle */}
             <p className="text-slate-200 font-sans text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-8 max-w-2xl drop-shadow-sm">
-              Professional fleet operations, specialized driver deployment, and dedicated vehicle movement solutions built around enterprise business requirements with guaranteed 24/7 SLA governance.
+              Professional commercial fleet operations, specialized Heavy Truck &amp; Indian EV Truck logistics, and Zero-Emission EV Bus jockey movement backed by 10,000+ verified commercial pilots with 24/7 SLA governance.
             </p>
 
             {/* High-Impact Action Buttons - Responsive Stack on Mobile */}
@@ -269,92 +269,92 @@ export default function HomePage() {
             <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
-                  src="/images/jockey_bus.jpg"
-                  alt="Pan-India Commercial Jockey Movement"
+                  src="/images/ev_bus_flagship.jpg"
+                  alt="Pan-India EV Bus & Commercial Coach Jockey Movement"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#FF7A00] text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  01 // Flagship Service
+                  01 // EV BUS &amp; COACH JOCKEY
                 </span>
               </div>
               <div className="p-7 bg-white flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">
-                    Pan-India Jockey Movement
+                    EV Bus &amp; Coach Jockey Movement
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Professional behind-the-wheel driveaway. We physically pilot buses, chassis, and heavy trailers safely across interstate corridors without flatbed risks.
+                    Professional behind-the-wheel driveaway. We physically pilot electric buses, luxury commercial coaches, and chassis safely across interstate corridors with zero flatbed transit damage.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-600">
                   <Link href="/services#jockey-movement" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>Explore Jockey Operations</span>
+                    <span>Explore EV Bus Operations</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* Card 2: Driver Network with HD Driver Inspection Image */}
+            {/* Card 2: Heavy Commercial & Indian EV Trucks */}
             <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
-                  src="/images/driver_network.jpg"
-                  alt="Verified Commercial Driver Deployment"
+                  src="/images/truck_bharatbenz_hd.jpg"
+                  alt="Heavy Commercial and Indian EV Trucks"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  02 // 10,000+ Screened Drivers
+                  02 // HEAVY &amp; EV TRUCKS
                 </span>
               </div>
               <div className="p-7 bg-white flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">
-                    Verified Driver Deployment
+                    Heavy Commercial &amp; EV Truck Freight
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Thoroughly authenticated commercial drivers with police background checks, HMV endorsements, sobriety screening, and route training.
+                    Multi-axle line-haul haulage, industrial container transport, and next-generation Indian EV truck deployment engineered for automotive OEMs and FMCG manufacturing corridors.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-600">
-                  <Link href="/services#driver-deployment" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>View Screening Standards</span>
+                  <Link href="/services#fleet-operations" className="flex items-center gap-1 hover:gap-2 transition-all">
+                    <span>Explore Freight Solutions</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* Card 3: Dedicated Fleet Operations */}
+            {/* Card 3: Chassis Delivery & Driveaway Relocation */}
             <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
-                  src="/images/hero_fleet.jpg"
-                  alt="Fleet Operations Management"
+                  src="/images/truck_chassis_hd.jpg"
+                  alt="Chassis Delivery and OEM Driveaway Movement"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  03 // Dedicated Fleet
+                  03 // CHASSIS &amp; DRIVEAWAY
                 </span>
               </div>
               <div className="p-7 bg-white flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">
-                    Fleet Operations Management
+                    Chassis Delivery &amp; Driveaway Relocation
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Tailored commercial fleets, seasonal demand balancing, line-haul relays, and preventive dispatch protocols structured under corporate SLAs.
+                    Direct road delivery of bare truck and bus chassis from OEM plants to bodybuilding yards and regional logistics terminals with end-to-end telemetry and vetted drivers.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-600">
-                  <Link href="/services#fleet-operations" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>Explore Fleet Agreements</span>
+                  <Link href="/services#driver-deployment" className="flex items-center gap-1 hover:gap-2 transition-all">
+                    <span>View Chassis Protocols</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -550,8 +550,8 @@ export default function HomePage() {
                 <div className="relative rounded-2xl overflow-hidden border-2 border-white/15 shadow-2xl group">
                   <div className="relative h-64 sm:h-72 w-full">
                     <Image
-                      src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop"
-                      alt="Jhajjar Operational Staging Terminal"
+                      src="/images/ev_bus_fleet.jpg"
+                      alt="Jhajjar Operational Staging Terminal & EV Fleet Hub"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />

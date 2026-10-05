@@ -505,17 +505,17 @@ export default function ContactPage() {
             <div className="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-52 w-full overflow-hidden">
                 <Image
-                  src="/images/hero_fleet.jpg"
-                  alt="Northern Industrial Corridors"
+                  src="/images/truck_bharatbenz_hd.jpg"
+                  alt="Northern Industrial Corridors and Commercial Freight"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <span className="absolute top-4 left-4 text-[11px] font-extrabold px-3 py-1 rounded-full bg-[#FF7A00] text-white shadow">
-                  HQ & CORRIDOR
+                  HQ &amp; CORRIDOR
                 </span>
                 <div className="absolute bottom-3 left-4 right-4 text-white">
-                  <h3 className="text-base font-extrabold">Northern & NCR Corridors</h3>
+                  <h3 className="text-base font-extrabold">Northern &amp; NCR Corridors</h3>
                   <p className="text-xs text-slate-200">Haryana, Rajasthan, Delhi-NCR, UP</p>
                 </div>
               </div>
@@ -534,8 +534,8 @@ export default function ContactPage() {
             <div className="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-52 w-full overflow-hidden">
                 <Image
-                  src="/images/jockey_bus.jpg"
-                  alt="Jockey Chassis Movement"
+                  src="/images/ev_bus_flagship.jpg"
+                  alt="EV Bus and Coach Jockey Movement"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -544,13 +544,13 @@ export default function ContactPage() {
                   ZERO-DAMAGE JOCKEY
                 </span>
                 <div className="absolute bottom-3 left-4 right-4 text-white">
-                  <h3 className="text-base font-extrabold">OEM Driveaway & Bodybuilding</h3>
-                  <p className="text-xs text-slate-200">Bare Chassis & Luxury Coaches</p>
+                  <h3 className="text-base font-extrabold">EV Bus &amp; Coach Driveaway</h3>
+                  <p className="text-xs text-slate-200">Bare Chassis &amp; Zero-Emission Buses</p>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                  Safe professional road driveaways delivering new chassis from manufacturing plants to bodybuilding facilities and customer depots across India.
+                  Safe professional road driveaways delivering new electric buses and luxury coaches from manufacturing plants to bodybuilding facilities and customer depots across India.
                 </p>
                 <div className="pt-3 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-slate-700">
                   <span>Zero Towing Damage</span>
@@ -559,12 +559,12 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Card 3: Screened Commercial Drivers */}
+            {/* Card 3: Screened Commercial Drivers & Chassis */}
             <div className="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-52 w-full overflow-hidden">
                 <Image
-                  src="/images/driver_network.jpg"
-                  alt="Verified Driver Network"
+                  src="/images/truck_chassis_hd.jpg"
+                  alt="Verified Chassis Relocation and Commercial Pilots"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

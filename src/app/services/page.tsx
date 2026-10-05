@@ -35,8 +35,8 @@ export default function ServicesPage() {
       <section className="relative w-full bg-[#060B14] text-white overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero_fleet.jpg"
-            alt="Commercial Fleet Logistics"
+            src="/images/truck_freight_hd.jpg"
+            alt="Commercial Fleet Logistics and Highway Freight"
             fill
             priority
             className="object-cover object-center opacity-30"
@@ -188,15 +188,15 @@ export default function ServicesPage() {
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900 h-80 sm:h-96">
                 <Image
-                  src="/images/hero_fleet.jpg"
-                  alt="Fleet Operations"
+                  src="/images/truck_bharatbenz_hd.jpg"
+                  alt="Heavy Commercial and Indian EV Truck Fleet Operations"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md text-slate-900 shadow-lg">
-                  <p className="font-extrabold text-sm">Highway Fleet Convoy</p>
-                  <p className="text-xs text-slate-600">Interstate freight corridors continuously monitored</p>
+                  <p className="font-extrabold text-sm">Heavy Commercial &amp; EV Truck Freight</p>
+                  <p className="text-xs text-slate-600">Interstate freight corridors continuously monitored 24/7</p>
                 </div>
               </div>
             </div>
@@ -218,14 +218,14 @@ export default function ServicesPage() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Pan-India Commercial Jockey Movement
+              Pan-India Commercial Jockey &amp; EV Bus Movement
             </h2>
 
             <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm">
               <p className="text-sm font-semibold text-brand-600">
                 Definition:{' '}
                 <span className="font-normal text-slate-700">
-                  A professional, credentialed commercial driver is provided to operate and physically drive a customer&apos;s or company&apos;s vehicle safely from one location to another.
+                  A professional, credentialed commercial driver is provided to operate and physically drive electric buses, commercial coaches, bare chassis, and heavy vehicles safely from factory gates or depots directly to destination.
                 </span>
               </p>
             </div>
@@ -234,8 +234,8 @@ export default function ServicesPage() {
           {/* Full Bleed Visual Highlight Image */}
           <div className="relative w-full h-80 sm:h-[420px] rounded-3xl overflow-hidden shadow-2xl mb-14">
             <Image
-              src="/images/jockey_bus.jpg"
-              alt="Pan-India Bus and Commercial Vehicle Jockey Movement"
+              src="/images/ev_bus_flagship.jpg"
+              alt="Pan-India EV Bus and Commercial Vehicle Jockey Movement"
               fill
               className="object-cover"
             />
@@ -243,10 +243,10 @@ export default function ServicesPage() {
             <div className="absolute bottom-6 left-6 right-6 sm:right-auto p-5 rounded-2xl bg-white/95 backdrop-blur-md text-slate-900 shadow-xl max-w-xl">
               <div className="flex items-center gap-2 mb-1">
                 <ShieldCheck className="w-5 h-5 text-emerald-600" />
-                <span className="font-extrabold text-sm">Certified Multi-Axle & Bus Handlers</span>
+                <span className="font-extrabold text-sm">Certified EV Bus &amp; Commercial Coach Handlers</span>
               </div>
               <p className="text-xs text-slate-600">
-                Specialized in managing air-suspension luxury coaches, multi-axle sleeper buses, EV chassis, and industrial prime movers under zero-damage transit agreements.
+                Specialized in managing regenerative-braking zero-emission EV buses, air-suspension luxury coaches, multi-axle sleeper buses, and bare truck chassis under strict zero-damage transit agreements.
               </p>
             </div>
           </div>
@@ -450,8 +450,8 @@ export default function ServicesPage() {
             <div className="lg:col-span-5 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-6">
               <div className="relative w-full h-44 rounded-2xl overflow-hidden shadow-inner">
                 <Image
-                  src="/images/driver_network.jpg"
-                  alt="Verified drivers in logistics hub"
+                  src="/images/ev_bus_fleet.jpg"
+                  alt="Verified commercial drivers and EV fleet terminal operations"
                   fill
                   className="object-cover"
                 />

@@ -113,7 +113,7 @@ export default function AboutPage() {
                 {/* Main Hero Image */}
                 <div className="relative h-[380px] sm:h-[420px] rounded-3xl overflow-hidden border-2 border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
                   <Image
-                    src="/images/hero_fleet.jpg"
+                    src="/images/truck_bharatbenz_hd.jpg"
                     alt="VT Logistics Heavy Commercial Fleet"
                     fill
                     priority
@@ -223,8 +223,8 @@ export default function AboutPage() {
                 {/* Main Large Image: High-Tech Logistics Terminal */}
                 <div className="relative h-[420px] sm:h-[480px] w-full sm:w-[90%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
                   <Image
-                    src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop"
-                    alt="VT Logistics Distribution Hub"
+                    src="/images/ev_bus_fleet.jpg"
+                    alt="VT Logistics Distribution Hub & EV Fleet Staging"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -235,22 +235,22 @@ export default function AboutPage() {
                       HQ DISPATCH CENTER
                     </span>
                     <h4 className="text-lg font-bold mt-2">Jhajjar Fleet Terminal</h4>
-                    <p className="text-xs text-slate-200">Integrated Haryana & Delhi-NCR Operations</p>
+                    <p className="text-xs text-slate-200">Integrated Haryana &amp; Delhi-NCR Operations</p>
                   </div>
                 </div>
 
-                {/* Overlapping Secondary Image: Driver Network Inspection */}
+                {/* Overlapping Secondary Image: Chassis Movement & Driveaway */}
                 <div className="relative sm:absolute -bottom-8 right-0 sm:right-4 w-full sm:w-[58%] h-56 rounded-2xl overflow-hidden shadow-2xl border-4 border-white group mt-4 sm:mt-0">
                   <Image
-                    src="/images/driver_network.jpg"
-                    alt="VT Commercial Driver Network"
+                    src="/images/truck_chassis_hd.jpg"
+                    alt="VT Heavy Commercial Chassis Movement"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <p className="text-xs font-bold text-amber-300 uppercase">On-Ground Verification</p>
-                    <p className="text-xs font-semibold text-white">100% Police & License Audited</p>
+                    <p className="text-xs font-bold text-amber-300 uppercase">Chassis &amp; Driveaway Movement</p>
+                    <p className="text-xs font-semibold text-white">OEM Yard To Body Builder Transit</p>
                   </div>
                 </div>
 
@@ -370,8 +370,8 @@ export default function AboutPage() {
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200/80 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
-                  src="/images/driver_network.jpg"
-                  alt="Verified Commercial Driver Deployment"
+                  src="/images/truck_freight_hd.jpg"
+                  alt="Verified Commercial Driver Deployment & Heavy Freight"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -398,8 +398,8 @@ export default function AboutPage() {
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200/80 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
-                  src="/images/jockey_bus.jpg"
-                  alt="Jockey Vehicle Movement & Driveaway"
+                  src="/images/ev_bus_flagship.jpg"
+                  alt="EV Bus & Commercial Vehicle Jockey Movement"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -545,8 +545,8 @@ export default function AboutPage() {
                 {/* Visual Header Image */}
                 <div className="relative w-full h-48 rounded-2xl overflow-hidden shadow-md group">
                   <Image
-                    src="/images/driver_network.jpg"
-                    alt="VT Screened commercial driver personnel"
+                    src="/images/ev_bus_flagship.jpg"
+                    alt="VT Screened commercial vehicle operations and EV bus movement"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
