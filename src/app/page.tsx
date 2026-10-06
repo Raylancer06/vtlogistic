@@ -64,12 +64,12 @@ export default function HomePage() {
 
             {/* Main Headline */}
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.12] text-white mb-6 uppercase">
-              Reliable Logistics. <br />
+              Reliable FTL Transportation. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-white">
                 Flexible Fleet.
               </span>{' '}
               <br />
-              <span className="text-white">Full Truck Load Transportation.</span>
+              <span className="text-white">Built Around Your Load.</span>
             </h1>
 
             {/* Subtitle */}
