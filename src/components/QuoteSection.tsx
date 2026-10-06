@@ -45,8 +45,6 @@ const FTL_VEHICLES = [
 const JOCKEY_VEHICLES = [
   { value: 'EV Bus (Zero-Emission Electric Bus)', label: 'EV Bus (Zero-Emission Electric Bus)' },
   { value: 'EV Truck (Indian Commercial Electric Truck)', label: 'EV Truck (Indian Commercial Electric Truck)' },
-  { value: 'Commercial Bus / Luxury Coach', label: 'Commercial Bus / Multi-Axle Luxury Coach' },
-  { value: 'Bare Chassis / EV Platform Driveaway', label: 'Bare Chassis / EV Platform Driveaway' },
 ];
 
 export default function QuoteSection() {
