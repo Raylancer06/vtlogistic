@@ -31,38 +31,53 @@ export default function AboutPage() {
 
   return (
     <div className="w-full bg-white overflow-hidden">
-      {/* 01 — THE COMPANY (POINT-TO-POINT AS REQUESTED) */}
-      <section className="relative w-full bg-white text-slate-900 border-b border-slate-200 py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* 01 — THE COMPANY HERO SECTION (MATCHING CINEMATIC BRAND THEME) */}
+      <section className="relative w-full bg-[#060B14] text-white overflow-hidden pt-16 sm:pt-24 pb-20 sm:pb-28 border-b border-slate-800">
+        {/* Cinematic HD Fleet Backdrop with Gradient Film */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/truck_freight_hd.jpg"
+            alt="VT Logistics Heavy Commercial Fleet"
+            fill
+            priority
+            className="object-cover object-center opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#060B14] via-[#060B14]/90 to-[#060B14]/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#060B14] via-transparent to-[#060B14]/40" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Narrative */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="flex items-center gap-2.5">
-                <span className="text-xs font-black text-[#FF7A00] tracking-widest uppercase">01</span>
-                <span className="w-8 h-[2px] bg-[#FF7A00]" />
-                <span className="text-xs font-extrabold uppercase tracking-widest text-slate-500">
-                  THE COMPANY
-                </span>
+              {/* Top Pill Badge */}
+              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-slate-200 text-xs font-bold tracking-widest uppercase shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-[#FF7A00] animate-ping" />
+                <span className="text-[#FF7A00] font-extrabold">01 • THE COMPANY</span>
+                <span className="text-slate-400">•</span>
+                <span>PAN-INDIA FTL NETWORK</span>
               </div>
 
-              <h1 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-950 tracking-tight leading-[1.15] uppercase">
+              {/* Main Headline */}
+              <h1 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.12] uppercase">
                 Moving India with{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7A00] to-amber-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7A00] via-amber-400 to-yellow-300">
                   Trust
                 </span>
                 , Speed &amp; Reliability.
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium max-w-2xl">
+              {/* Subtitle / Description */}
+              <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl drop-shadow-sm">
                 VT Logistics Services is a professional logistics company specializing exclusively in Full Truck Load (FTL) transportation across India. We provide reliable truck placement, competitive freight rates and timely transportation solutions for businesses of every scale.
               </p>
 
-              {/* Action Buttons */}
+              {/* High-Impact Action Buttons */}
               <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
                 <button
                   type="button"
                   onClick={openModal}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#FF7A00] hover:bg-[#E06900] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl shadow-[0_8px_20px_rgba(255,122,0,0.3)] transition-all hover:-translate-y-0.5 whitespace-nowrap"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#FF7A00] hover:bg-[#E06900] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl shadow-[0_8px_20px_rgba(255,122,0,0.3)] hover:shadow-[0_12px_28px_rgba(255,122,0,0.45)] transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   <Truck className="w-4 h-4 shrink-0" />
                   <span>Request A Vehicle</span>
@@ -73,7 +88,7 @@ export default function AboutPage() {
                   href="https://wa.me/919053529200?text=Hello%20VT%20Logistic%20Services,%20I%20would%20like%20to%20discuss%20logistics%20requirements."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-md transition-all hover:-translate-y-0.5 whitespace-nowrap"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white font-display font-extrabold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_6px_18px_rgba(37,211,102,0.25)] hover:shadow-[0_10px_22px_rgba(37,211,102,0.35)] transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
                 >
                   <WhatsAppIcon className="w-4 h-4 shrink-0" />
                   <span>WhatsApp</span>
@@ -81,52 +96,67 @@ export default function AboutPage() {
 
                 <a
                   href="tel:9053529200"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 font-display font-bold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl border border-slate-200 transition-all whitespace-nowrap"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white font-display font-bold text-[13px] tracking-wider uppercase px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl border border-white/20 hover:border-white/40 transition-all duration-300 whitespace-nowrap group"
                   aria-label="Call +91 9053529200"
                 >
-                  <Phone className="w-4 h-4 text-[#FF7A00] shrink-0" />
+                  <Phone className="w-4 h-4 text-[#FF7A00] shrink-0 group-hover:scale-110 transition-transform" />
                   <span>+91 9053529200</span>
                 </a>
               </div>
 
               {/* Fast Trust Indicators */}
-              <div className="pt-4 flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-600 border-t border-slate-200">
+              <div className="pt-4 flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-300 border-t border-white/10">
                 <span className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Pan-India FTL Network
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Pan-India FTL Network
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> 100% On-Time Deliveries
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" /> 100% On-Time Deliveries
                 </span>
                 <span className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Jhajjar HQ 24/7 Control Desk
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Jhajjar HQ 24/7 Control Desk
                 </span>
               </div>
             </div>
 
-            {/* Right: Clean Truck Photo */}
+            {/* Right: High-Definition Commercial Truck Card */}
             <div className="lg:col-span-5 relative">
-              <div className="relative h-[340px] sm:h-[420px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
-                <Image
-                  src="/images/about_hero_banner.png"
-                  alt="VT Logistics Heavy Commercial Transport"
-                  fill
-                  priority
-                  className="object-cover object-right group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 text-slate-900 shadow-lg">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-[11px] uppercase font-extrabold tracking-wider text-[#FF7A00]">
-                        Full Truckload Excellence
-                      </p>
-                      <p className="text-sm font-extrabold text-slate-900">
-                        1 to 40 Ton Pan-India Fleets
-                      </p>
-                    </div>
-                    <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-300">
-                      VERIFIED SLA
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20 bg-slate-900 group">
+                <div className="relative h-[360px] sm:h-[440px] w-full overflow-hidden">
+                  <Image
+                    src="/images/truck_bharatbenz_hd.jpg"
+                    alt="VT Logistics Heavy Commercial Transport Fleet"
+                    fill
+                    priority
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#060B14] via-[#060B14]/20 to-transparent opacity-80" />
+
+                  {/* Floating Top Badges */}
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FF7A00] text-white text-xs font-black uppercase tracking-wider shadow-lg">
+                      <Truck className="w-3.5 h-3.5" />
+                      <span>Verified Heavy Fleet</span>
                     </span>
+                    <span className="px-3 py-1.5 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/20 text-emerald-400 text-xs font-mono font-bold shadow">
+                      GPS LIVE
+                    </span>
+                  </div>
+
+                  {/* Bottom Glass Overlay Info */}
+                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-xl">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-[11px] uppercase font-extrabold tracking-wider text-[#FF7A00]">
+                          Full Truckload Excellence
+                        </p>
+                        <p className="text-sm sm:text-base font-extrabold text-white">
+                          1 to 40 Ton Pan-India Fleets
+                        </p>
+                      </div>
+                      <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                        VERIFIED SLA
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,7 +166,7 @@ export default function AboutPage() {
       </section>
 
       {/* METRICS BAR */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 z-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-14 z-20">
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200/90 grid grid-cols-2 lg:grid-cols-4 p-4 sm:p-6 gap-3 sm:gap-6">
           <div className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
             <div className="w-11 h-11 rounded-xl bg-orange-100 text-[#FF7A00] flex items-center justify-center shrink-0">
