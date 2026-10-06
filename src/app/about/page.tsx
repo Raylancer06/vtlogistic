@@ -506,7 +506,7 @@ export default function AboutPage() {
       {/* HIGH-CONVERTING CTA BANNER */}
       <section className="relative py-20 bg-gradient-to-b from-slate-50 to-slate-100 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-4xl mx-auto space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 text-[#FF7A00] text-xs font-extrabold uppercase tracking-widest">
               <span>Your Trust Our Destination</span>
             </div>
@@ -515,34 +515,36 @@ export default function AboutPage() {
               Ready to Upgrade Your Commercial Fleet Operations?
             </h2>
 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Contact our Jhajjar headquarters or schedule a dedicated vehicle deployment session with our operations coordinators today.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4">
               <button
                 type="button"
                 onClick={openModal}
-                className="px-8 py-4 rounded-xl bg-[#FF7A00] hover:bg-[#E06900] text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-xl bg-[#FF7A00] hover:bg-[#E06900] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-0.5 whitespace-nowrap inline-flex items-center justify-center gap-2"
               >
-                Schedule Vehicle Deployment
+                <Truck className="w-4 h-4 shrink-0" />
+                <span>Schedule Vehicle Deployment</span>
               </button>
 
               <a
                 href="https://wa.me/919053529200?text=Hello%20VT%20Logistic%20Services,%20I%20would%20like%20to%20discuss%20a%20logistics%20partnership."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-sm uppercase tracking-wider shadow-md shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap inline-flex items-center gap-2"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-md shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap inline-flex items-center justify-center gap-2"
               >
-                <WhatsAppIcon className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
                 <span>WhatsApp</span>
               </a>
 
               <Link
                 href="/contact"
-                className="px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-sm uppercase tracking-wider border border-slate-300 transition-all shadow-sm whitespace-nowrap"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-xs sm:text-sm uppercase tracking-wider border border-slate-300 transition-all shadow-sm hover:-translate-y-0.5 whitespace-nowrap inline-flex items-center justify-center gap-2"
               >
-                Contact Dispatch Desk
+                <Phone className="w-4 h-4 text-[#FF7A00] shrink-0" />
+                <span>Contact Dispatch Desk</span>
               </Link>
             </div>
           </div>

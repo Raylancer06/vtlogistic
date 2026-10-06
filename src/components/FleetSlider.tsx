@@ -211,9 +211,9 @@ export default function FleetSlider() {
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Category Filter Tabs & Slider Controls */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
-        {/* Filter Pills */}
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 p-1.5 rounded-2xl bg-slate-100/80 border border-slate-200">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 mb-6">
+        {/* Filter Pills - Horizontally scrollable on mobile */}
+        <div className="w-full sm:w-auto flex items-center gap-1.5 sm:gap-2 p-1.5 rounded-2xl bg-slate-100/80 border border-slate-200 overflow-x-auto scrollbar-none">
           {[
             { id: 'all', label: 'All Fleet (10)' },
             { id: 'light', label: 'Light & Medium (1–7T)' },
@@ -228,7 +228,7 @@ export default function FleetSlider() {
                 setFilter(tab.id as any);
                 setCurrentIndex(0);
               }}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
+              className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 ${
                 filter === tab.id
                   ? 'bg-white text-slate-900 shadow-sm border border-slate-200'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
@@ -240,7 +240,7 @@ export default function FleetSlider() {
         </div>
 
         {/* Right Arrow Controls & Play/Pause */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between sm:justify-end gap-2 w-full sm:w-auto">
           <button
             type="button"
             onClick={() => setIsPaused(!isPaused)}

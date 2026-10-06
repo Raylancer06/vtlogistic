@@ -84,23 +84,23 @@ export default function LogoScroller() {
                 key={`${client.filename}-${idx}`}
                 onMouseEnter={() => setActiveClient(client.name)}
                 onMouseLeave={() => setActiveClient(null)}
-                className="relative flex flex-col items-center justify-center min-w-[190px] sm:min-w-[230px] h-28 sm:h-32 px-5 py-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/15 hover:border-[#FF7A00] hover:-translate-y-1.5 group/card cursor-pointer"
+                className="relative flex flex-col items-center justify-between min-w-[180px] sm:min-w-[210px] h-24 sm:h-28 px-4 py-3 sm:py-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/15 hover:border-[#FF7A00] hover:-translate-y-1.5 group/card cursor-pointer overflow-hidden"
               >
                 {/* Logo Image */}
-                <div className="relative w-full h-14 sm:h-16 flex items-center justify-center px-2">
+                <div className="relative w-full h-11 sm:h-13 flex items-center justify-center px-1">
                   <Image
                     src={`/images/${client.filename}`}
                     alt={client.name}
-                    width={200}
-                    height={70}
-                    className="max-h-13 sm:max-h-15 max-w-[160px] sm:max-w-[195px] w-auto h-auto object-contain filter contrast-105 transition-all duration-300 group-hover/card:scale-105"
+                    width={150}
+                    height={46}
+                    className="max-h-9 sm:max-h-11 max-w-[135px] sm:max-w-[155px] w-auto h-auto object-contain transition-all duration-300 group-hover/card:scale-105"
                   />
                 </div>
 
                 {/* Micro Tagline on Hover */}
-                <div className="mt-1 flex items-center gap-1 opacity-70 group-hover/card:opacity-100 transition-opacity">
-                  <ShieldCheck className="w-3 h-3 text-[#FF7A00]" />
-                  <span className="text-[11px] font-semibold text-slate-600 truncate max-w-[170px]">
+                <div className="flex items-center gap-1 opacity-75 group-hover/card:opacity-100 transition-opacity">
+                  <ShieldCheck className="w-3 h-3 text-[#FF7A00] shrink-0" />
+                  <span className="text-[10px] sm:text-[11px] font-semibold text-slate-600 truncate max-w-[145px]">
                     {client.tag}
                   </span>
                 </div>
