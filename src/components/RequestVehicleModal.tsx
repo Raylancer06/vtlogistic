@@ -65,6 +65,8 @@ export default function RequestVehicleModal({ isOpen, onClose }: RequestVehicleM
   const [destination, setDestination] = useState('');
   const [urgency, setUrgency] = useState('Immediate (< 2 Hours)');
   const [notes, setNotes] = useState('');
+  const [botHoneypot, setBotHoneypot] = useState('');
+  const [renderedAt] = useState<number>(() => Date.now());
 
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -113,6 +115,8 @@ export default function RequestVehicleModal({ isOpen, onClose }: RequestVehicleM
           phone: cleanPhone,
           email,
           urgency,
+          website: botHoneypot,
+          renderedAt,
           notes: [
             tonnage ? `Tonnage: ${tonnage}` : '',
             boxes ? `Boxes/Bags: ${boxes}` : '',
@@ -248,6 +252,30 @@ export default function RequestVehicleModal({ isOpen, onClose }: RequestVehicleM
         ) : (
           /* Input Form */
           <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-5 max-h-[80vh] overflow-y-auto">
+            {/* Invisible Honeypot Trap for automated bots */}
+            <div
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                left: '-9999px',
+                opacity: 0,
+                pointerEvents: 'none',
+                height: 0,
+                overflow: 'hidden',
+              }}
+            >
+              <label htmlFor="modal-website">Please leave this blank</label>
+              <input
+                type="text"
+                id="modal-website"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={botHoneypot}
+                onChange={(e) => setBotHoneypot(e.target.value)}
+              />
+            </div>
+
             {errorMessage && (
               <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-center gap-2">
                 <AlertCircle className="w-4 h-4 shrink-0 text-red-600" />

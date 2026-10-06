@@ -35,7 +35,9 @@ export default function ContactPage() {
     origin: '',
     destination: '',
     details: '',
+    website: '', // Honeypot trap for automated bots
   });
+  const [renderedAt] = useState<number>(() => Date.now());
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [submissionResult, setSubmissionResult] = useState<{
@@ -59,7 +61,10 @@ export default function ContactPage() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          renderedAt,
+        }),
       });
 
       const json = await res.json();
@@ -322,6 +327,30 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
+                  {/* Invisible Honeypot Trap for automated bots */}
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      position: 'absolute',
+                      left: '-9999px',
+                      opacity: 0,
+                      pointerEvents: 'none',
+                      height: 0,
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <label htmlFor="contact-website">Please leave this blank</label>
+                    <input
+                      type="text"
+                      id="contact-website"
+                      name="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formData.website}
+                      onChange={handleChange}
+                    />
+                  </div>
+
                   {errorMessage && (
                     <div className="p-3.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs flex items-center gap-2">
                       <FileText className="w-4 h-4 shrink-0 text-red-600" />

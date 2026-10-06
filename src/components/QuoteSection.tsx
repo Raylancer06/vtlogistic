@@ -59,6 +59,8 @@ export default function QuoteSection() {
   const [email, setEmail] = useState('');
   const [urgency, setUrgency] = useState('Immediate (< 2 Hours)');
   const [notes, setNotes] = useState('');
+  const [botHoneypot, setBotHoneypot] = useState('');
+  const [renderedAt] = useState<number>(() => Date.now());
 
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -112,6 +114,8 @@ export default function QuoteSection() {
           phone: cleanPhone,
           email,
           urgency,
+          website: botHoneypot,
+          renderedAt,
           notes: [
             tonnage ? `Tonnage: ${tonnage}` : '',
             boxes ? `Boxes/Bags: ${boxes}` : '',
@@ -344,6 +348,29 @@ export default function QuoteSection() {
               ) : (
                 /* The Functional Dispatch Form */
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Invisible Honeypot Trap for automated bots */}
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      position: 'absolute',
+                      left: '-9999px',
+                      opacity: 0,
+                      pointerEvents: 'none',
+                      height: 0,
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <label htmlFor="quote-website">Please leave this blank</label>
+                    <input
+                      type="text"
+                      id="quote-website"
+                      name="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={botHoneypot}
+                      onChange={(e) => setBotHoneypot(e.target.value)}
+                    />
+                  </div>
                   <div>
                     <h4 className="text-2xl font-extrabold text-slate-900 tracking-tight">
                       Configure Your Dispatch Request

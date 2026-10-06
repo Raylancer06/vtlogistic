@@ -1,13 +1,31 @@
 import { NextResponse } from 'next/server';
 import { sendDispatchEmail, generateMailtoUrl, OFFICIAL_EMAIL, OFFICIAL_WHATSAPP } from '@/lib/email';
+import { checkSpam } from '@/lib/antispam';
 
 export async function POST(request: Request) {
   try {
     const data = await request.json();
 
-    if (!data.phone || data.phone.trim().length < 10) {
+    // Extract client IP address for sliding-window rate limiting
+    const forwarded = request.headers.get('x-forwarded-for');
+    const realIp = request.headers.get('x-real-ip');
+    const clientIp = forwarded ? forwarded.split(',')[0].trim() : (realIp || '127.0.0.1');
+
+    // Run multi-layered anti-spam check (honeypot, timing, phone dummy check, keyword/link filters, rate limit)
+    const spamResult = checkSpam({
+      honeypot: data.website || data.honeypot,
+      renderedAt: data.renderedAt,
+      name: data.name,
+      phone: data.phone,
+      email: data.email,
+      company: data.company,
+      message: data.details,
+      clientIp,
+    });
+
+    if (spamResult.isSpam) {
       return NextResponse.json(
-        { error: 'Please provide a valid 10-digit mobile number' },
+        { error: spamResult.reason || 'Spam or automated bot submission blocked' },
         { status: 400 }
       );
     }
