@@ -193,11 +193,6 @@ export default function ServicesPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md text-slate-900 shadow-lg">
-                  <p className="font-extrabold text-sm">Heavy Commercial &amp; EV Truck Freight</p>
-                  <p className="text-xs text-slate-600">Interstate freight corridors continuously monitored 24/7</p>
-                </div>
               </div>
             </div>
           </div>
