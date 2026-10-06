@@ -59,7 +59,7 @@ export default function HomePage() {
               <span className="w-2 h-2 rounded-full bg-[#FF7A00] animate-ping"></span>
               <span className="text-[#FF7A00] font-extrabold">PAN-INDIA B2B LOGISTICS</span>
               <span className="text-slate-400">•</span>
-              <span>10,000+ VERIFIED DRIVERS</span>
+              <span>DELIVERING TO NEPAL | BHUTAN | BANGLADESH</span>
             </div>
 
             {/* Main Headline */}

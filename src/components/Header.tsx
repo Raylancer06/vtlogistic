@@ -62,7 +62,7 @@ export default function Header({ onRequestVehicle }: HeaderProps) {
             <span className="inline-flex items-center justify-center w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
             <span className="font-extrabold text-slate-200 tracking-wider truncate">PAN-INDIA B2B LOGISTICS</span>
             <span className="text-slate-600 hidden sm:inline">•</span>
-            <span className="hidden sm:inline text-slate-400 font-medium truncate">10,000+ Verified Drivers</span>
+            <span className="hidden sm:inline text-slate-400 font-medium truncate">Delivering to Nepal | Bhutan | Bangladesh</span>
           </div>
           <div className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs shrink-0">
             <span className="text-slate-400 hidden md:inline">Jhajjar, Haryana HQ</span>
