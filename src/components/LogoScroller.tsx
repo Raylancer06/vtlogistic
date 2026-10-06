@@ -84,29 +84,29 @@ export default function LogoScroller() {
                 key={`${client.filename}-${idx}`}
                 onMouseEnter={() => setActiveClient(client.name)}
                 onMouseLeave={() => setActiveClient(null)}
-                className="relative flex flex-col items-center justify-center min-w-[170px] sm:min-w-[210px] h-24 sm:h-28 px-6 py-3 rounded-2xl bg-white border border-slate-200/90 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/15 hover:border-brand-400 hover:-translate-y-1.5 group/card cursor-pointer"
+                className="relative flex flex-col items-center justify-center min-w-[190px] sm:min-w-[230px] h-28 sm:h-32 px-5 py-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/15 hover:border-[#FF7A00] hover:-translate-y-1.5 group/card cursor-pointer"
               >
                 {/* Logo Image */}
-                <div className="relative w-full h-12 sm:h-14 flex items-center justify-center">
+                <div className="relative w-full h-14 sm:h-16 flex items-center justify-center px-2">
                   <Image
                     src={`/images/${client.filename}`}
                     alt={client.name}
-                    width={150}
-                    height={56}
-                    className="max-h-12 sm:max-h-14 max-w-[140px] sm:max-w-[170px] w-auto h-auto object-contain filter contrast-105 transition-all duration-300 group-hover/card:scale-105"
+                    width={200}
+                    height={70}
+                    className="max-h-13 sm:max-h-15 max-w-[160px] sm:max-w-[195px] w-auto h-auto object-contain filter contrast-105 transition-all duration-300 group-hover/card:scale-105"
                   />
                 </div>
 
                 {/* Micro Tagline on Hover */}
                 <div className="mt-1 flex items-center gap-1 opacity-70 group-hover/card:opacity-100 transition-opacity">
-                  <ShieldCheck className="w-3 h-3 text-brand-600" />
-                  <span className="text-[11px] font-semibold text-slate-600 truncate max-w-[150px]">
+                  <ShieldCheck className="w-3 h-3 text-[#FF7A00]" />
+                  <span className="text-[11px] font-semibold text-slate-600 truncate max-w-[170px]">
                     {client.tag}
                   </span>
                 </div>
 
                 {/* Subtle top indicator pip on hover */}
-                <span className="absolute top-2 right-2.5 w-1.5 h-1.5 rounded-full bg-brand-500 opacity-0 group-hover/card:opacity-100 transition-opacity" />
+                <span className="absolute top-2 right-2.5 w-1.5 h-1.5 rounded-full bg-[#FF7A00] opacity-0 group-hover/card:opacity-100 transition-opacity" />
               </div>
             ))}
           </div>
