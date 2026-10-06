@@ -26,6 +26,7 @@ import {
   Radio,
 } from 'lucide-react';
 import LogoScroller from '@/components/LogoScroller';
+import FleetSlider from '@/components/FleetSlider';
 import QuoteSection from '@/components/QuoteSection';
 import { useRequestModal } from '@/components/LayoutClientWrapper';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
@@ -250,7 +251,7 @@ export default function HomePage() {
       {/* 5. FLEET TONNAGE SHOWCASE (A TRUCK FOR EVERY TONNAGE) */}
       <section className="py-20 bg-white border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
             <div>
               <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#FF7A00] mb-2">
                 <Truck className="w-3.5 h-3.5" />
@@ -261,60 +262,12 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="text-slate-600 max-w-md text-sm sm:text-base leading-relaxed">
-              From 14 FT closed bodies to 40-ton trailers — pick the exact vehicle your consignment demands.
+              From 14 FT closed bodies to 40-ton trailers — explore our verified fleet with live payload specs and instant dispatch booking.
             </p>
           </div>
 
-          {/* 10 Vehicle Tonnage Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 sm:gap-4 mb-10">
-            {[
-              { size: '14 FT', spec: 'CLOSED / OPEN', payload: 'up to 4 Ton' },
-              { size: '17 FT', spec: 'CLOSED / OPEN', payload: 'up to 5 Ton' },
-              { size: '20 FT', spec: 'CLOSED / OPEN', payload: 'up to 7 Ton' },
-              { size: '22 FT', spec: 'CLOSED / OPEN', payload: 'up to 10 Ton' },
-              { size: '32 FT', spec: 'SINGLE AXLE', payload: 'up to 7 Ton' },
-              { size: '32 FT', spec: 'MULTI AXLE', payload: 'up to 18 Ton' },
-              { size: 'OPEN BODY', spec: 'FLATBED', payload: 'Oversized Loads' },
-              { size: 'CONTAINER', spec: 'ENCLOSED', payload: 'Secure Cargo' },
-              { size: 'TRAILER', spec: 'HEAVY HAUL', payload: '20 - 40 Ton' },
-              { size: 'TAURUS', spec: 'MULTI AXLE', payload: 'High Payload' },
-            ].map((truck, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-sm hover:shadow-lg hover:border-[#FF7A00] transition-all group flex flex-col justify-between"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#FF7A00] flex items-center justify-center">
-                    <Truck className="w-4 h-4" />
-                  </div>
-                  <span className="text-[10px] font-bold text-slate-400">0{idx + 1}</span>
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight group-hover:text-[#FF7A00] transition-colors">
-                    {truck.size}
-                  </h3>
-                  <p className="text-[11px] font-bold text-[#FF7A00] uppercase tracking-wider mt-0.5">
-                    {truck.spec}
-                  </p>
-                  <p className="text-xs text-slate-500 font-medium mt-1">
-                    {truck.payload}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Branded Visual Fleet Infographic Banner */}
-          <div className="relative w-full rounded-3xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50">
-            <div className="relative w-full h-[240px] sm:h-[360px] md:h-[460px]">
-              <Image
-                src="/images/vt_fleet_showcase.png"
-                alt="Value Trust Logistic Services - Our Fleet. Your Flexibility."
-                fill
-                className="object-contain object-center"
-              />
-            </div>
-          </div>
+          {/* Interactive HD Fleet Slider */}
+          <FleetSlider />
         </div>
       </section>
 
