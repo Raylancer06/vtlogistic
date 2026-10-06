@@ -11,6 +11,9 @@ interface ClientLogo {
 }
 
 const CLIENT_LOGOS: ClientLogo[] = [
+  { name: 'NRN Linkit', filename: 'nrn.jpeg', tag: 'Connecting • Enabling • Delivering' },
+  { name: 'Sada Shiv Enterprises', filename: 'sada.jpeg', tag: 'Industrial Freight & Logistics' },
+  { name: 'Signature Logistics', filename: 'sign.jpeg', tag: 'Key Enterprise Partner' },
   { name: 'Crown Logistics', filename: 'crown.jpeg', tag: 'Automotive & Heavy Fleet' },
   { name: 'Mahadhan', filename: 'mahadhan.jpeg', tag: 'Agri Supply Chain' },
   { name: 'Linkit Logistics', filename: 'linkit logistics.jpeg', tag: 'Interstate Transport' },

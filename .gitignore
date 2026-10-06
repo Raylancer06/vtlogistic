@@ -36,3 +36,4 @@ next-env.d.ts
 # prototypes
 *_redesign/
 value_trust_b2b_velocity/
+extracted_docx/

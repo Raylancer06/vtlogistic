@@ -25,24 +25,35 @@ import {
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 
 const CATEGORIES = [
+  { id: 'Fleet Operations (FTL)', label: 'Fleet Operations (FTL)', icon: Truck, badge: '1–40 Ton' },
   { id: 'Jockey Movement', label: 'Jockey Movement', icon: Compass, badge: 'Flagship' },
-  { id: 'Fleet Operations', label: 'Fleet Operations', icon: Truck, badge: 'Dedicated' },
-  { id: 'Driver Deployment', label: 'Driver Deployment', icon: Users, badge: '10k+ Network' },
-  { id: 'Vehicle Relocation', label: 'Vehicle Relocation', icon: Repeat, badge: 'Intercity' },
 ];
 
-const VEHICLE_TYPES = [
+const FTL_VEHICLES = [
+  { value: '14 FT (Closed / Open, up to 4 Ton)', label: '14 FT (Closed / Open, up to 4 Ton)' },
+  { value: '17 FT (Closed / Open, up to 5 Ton)', label: '17 FT (Closed / Open, up to 5 Ton)' },
+  { value: '20 FT (Closed / Open, up to 7 Ton)', label: '20 FT (Closed / Open, up to 7 Ton)' },
+  { value: '22 FT (Closed / Open, up to 10 Ton)', label: '22 FT (Closed / Open, up to 10 Ton)' },
+  { value: '32 FT Single Axle (SXL, up to 7 Ton)', label: '32 FT Single Axle (SXL, up to 7 Ton)' },
+  { value: '32 FT Multi Axle (MXL, up to 18 Ton)', label: '32 FT Multi Axle (MXL, up to 18 Ton)' },
+  { value: 'Open Body / Flatbed (Oversized Loads)', label: 'Open Body / Flatbed (Oversized Loads)' },
+  { value: 'Container (Enclosed Secure Cargo)', label: 'Container (Enclosed Secure Cargo)' },
+  { value: 'Trailer (Heavy Haul, 20–40 Ton)', label: 'Trailer (Heavy Haul, 20–40 Ton)' },
+  { value: 'Taurus (Multi-Axle High Payload)', label: 'Taurus (Multi-Axle High Payload)' },
+];
+
+const JOCKEY_VEHICLES = [
+  { value: 'EV Bus (Zero-Emission Electric Bus)', label: 'EV Bus (Zero-Emission Electric Bus)' },
+  { value: 'EV Truck (Indian Commercial Electric Truck)', label: 'EV Truck (Indian Commercial Electric Truck)' },
   { value: 'Commercial Bus / Luxury Coach', label: 'Commercial Bus / Multi-Axle Luxury Coach' },
   { value: 'Bare Chassis / EV Platform Driveaway', label: 'Bare Chassis / EV Platform Driveaway' },
-  { value: 'Heavy Multi-Axle Trailer / Prime Mover', label: 'Heavy Multi-Axle Trailer / Prime Mover' },
-  { value: 'Light Commercial Vehicle / Delivery Vans', label: 'Light Commercial Vehicle (LCV) / Delivery Vans' },
-  { value: 'Plant Internal Shuttles & Tippers', label: 'Plant Internal Shuttles & Tippers' },
-  { value: 'Other Specialized Commercial Units', label: 'Other Specialized Commercial Units' },
 ];
 
 export default function QuoteSection() {
-  const [service, setService] = useState('Jockey Movement');
-  const [vehicle, setVehicle] = useState('Commercial Bus / Luxury Coach');
+  const [service, setService] = useState('Fleet Operations (FTL)');
+  const [vehicle, setVehicle] = useState('14 FT (Closed / Open, up to 4 Ton)');
+  const [tonnage, setTonnage] = useState('');
+  const [boxes, setBoxes] = useState('');
   const [pickup, setPickup] = useState('');
   const [dropoff, setDropoff] = useState('');
   const [name, setName] = useState('');
@@ -103,7 +114,11 @@ export default function QuoteSection() {
           phone: cleanPhone,
           email,
           urgency,
-          notes,
+          notes: [
+            tonnage ? `Tonnage: ${tonnage}` : '',
+            boxes ? `Boxes/Bags: ${boxes}` : '',
+            notes,
+          ].filter(Boolean).join(' | '),
         }),
       });
 
@@ -353,7 +368,7 @@ export default function QuoteSection() {
                     <label className="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-2.5">
                       1. Requirement Category
                     </label>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {CATEGORIES.map((cat) => {
                         const Icon = cat.icon;
                         const isSelected = service === cat.id;
@@ -361,22 +376,38 @@ export default function QuoteSection() {
                           <button
                             key={cat.id}
                             type="button"
-                            onClick={() => setService(cat.id)}
-                            className={`p-3 rounded-2xl border text-left transition-all relative flex flex-col justify-between ${
+                            onClick={() => {
+                              setService(cat.id);
+                              if (cat.id === 'Fleet Operations (FTL)') {
+                                setVehicle('14 FT (Closed / Open, up to 4 Ton)');
+                              } else {
+                                setVehicle('EV Bus (Zero-Emission Electric Bus)');
+                              }
+                            }}
+                            className={`p-4 rounded-2xl border text-left transition-all relative flex items-center justify-between ${
                               isSelected
                                 ? 'border-brand-600 bg-brand-50/80 text-brand-700 shadow-sm ring-2 ring-brand-500/20'
                                 : 'border-slate-200 bg-slate-50/50 hover:bg-white hover:border-slate-300 text-slate-700'
                             }`}
                           >
-                            <div className="flex items-center justify-between mb-2">
-                              <Icon className={`w-4 h-4 ${isSelected ? 'text-brand-600' : 'text-slate-500'}`} />
-                              <span className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded ${
+                            <div className="flex items-center gap-3">
+                              <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                                 isSelected ? 'bg-brand-600 text-white' : 'bg-slate-200 text-slate-600'
                               }`}>
-                                {cat.badge}
-                              </span>
+                                <Icon className="w-5 h-5" />
+                              </div>
+                              <div>
+                                <span className="text-sm font-extrabold block leading-tight">{cat.label}</span>
+                                <span className="text-[11px] text-slate-500 font-medium">
+                                  {cat.id === 'Fleet Operations (FTL)' ? 'Dedicated Trucks (1–40 Ton)' : 'Skilled Driver Behind-The-Wheel'}
+                                </span>
+                              </div>
                             </div>
-                            <span className="text-xs font-bold leading-tight">{cat.label}</span>
+                            <span className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded ${
+                              isSelected ? 'bg-brand-600 text-white' : 'bg-slate-200 text-slate-600'
+                            }`}>
+                              {cat.badge}
+                            </span>
                           </button>
                         );
                       })}
@@ -394,7 +425,7 @@ export default function QuoteSection() {
                         onChange={(e) => setVehicle(e.target.value)}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-4 focus:ring-brand-500/10 focus:border-brand-600 bg-white transition-all appearance-none cursor-pointer"
                       >
-                        {VEHICLE_TYPES.map((vt) => (
+                        {(service === 'Fleet Operations (FTL)' ? FTL_VEHICLES : JOCKEY_VEHICLES).map((vt) => (
                           <option key={vt.value} value={vt.value}>
                             {vt.label}
                           </option>
@@ -404,6 +435,36 @@ export default function QuoteSection() {
                         ▼
                       </div>
                     </div>
+
+                    {/* Conditional Tonnage and Boxes/Bags for FTL */}
+                    {service === 'Fleet Operations (FTL)' && (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+                        <div>
+                          <label className="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">
+                            Tonnage / Weight
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="e.g. 5 Ton / 18 Ton / 40 Ton"
+                            value={tonnage}
+                            onChange={(e) => setTonnage(e.target.value)}
+                            className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-brand-500/10 focus:border-brand-600 transition-all"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">
+                            No. of Boxes / Bags / Units
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="e.g. 250 Boxes / 500 Bags"
+                            value={boxes}
+                            onChange={(e) => setBoxes(e.target.value)}
+                            className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-brand-500/10 focus:border-brand-600 transition-all"
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* 3. Origin & Destination with Swap button */}

@@ -16,7 +16,7 @@ export default function Footer({ onRequestVehicle }: { onRequestVehicle?: () => 
               <ShieldCheck className="w-7 h-7 text-amber-300" />
             </div>
             <div>
-              <h4 className="font-extrabold text-base sm:text-xl tracking-tight">Need Dedicated Jockey or Commercial Fleet Deployment?</h4>
+              <h4 className="font-extrabold text-base sm:text-xl tracking-tight">Looking for Reliable Fleet &amp; Jockey Support?</h4>
               <p className="text-xs sm:text-sm text-blue-100 font-medium">Immediate driver verification and pan-India SLA execution within 24 hours.</p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function Footer({ onRequestVehicle }: { onRequestVehicle?: () => 
         <div className="mt-14 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center md:text-left">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
             <p>
-              © {new Date().getFullYear()} VT Logistic Services. All rights reserved.{' '}
+              © 2025 VT Logistic Services. All rights reserved.{' '}
               <span className="text-slate-200 font-semibold">Your Trust Our Destination.</span>
             </p>
             <span className="hidden sm:inline text-slate-700">•</span>

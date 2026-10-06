@@ -68,12 +68,12 @@ export default function HomePage() {
                 Flexible Fleet.
               </span>{' '}
               <br />
-              <span className="text-white">Trusted Drivers.</span>
+              <span className="text-white">Full Truck Load Transportation.</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-slate-200 font-sans text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-8 max-w-2xl drop-shadow-sm">
-              Professional commercial fleet operations, specialized Heavy Truck &amp; Indian EV Truck logistics, and Zero-Emission EV Bus jockey movement backed by 10,000+ verified commercial pilots with 24/7 SLA governance.
+              We provide a versatile fleet from 1 to 40 tons, tailored to customer load and transportation requirements, along with EV fleet deployment and jockey movement support.
             </p>
 
             {/* High-Impact Action Buttons - Responsive Stack on Mobile */}
@@ -133,20 +133,9 @@ export default function HomePage() {
       {/* 2. OVERLAPPING METRICS BANNER (RESPONSIVE & BALANCED) */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-12 z-20">
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200/90 grid grid-cols-2 lg:grid-cols-4 p-4 sm:p-6 gap-3 sm:gap-6">
-          {/* Stat 1 */}
+          {/* Stat 1: Jhajjar HQ */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-brand-300 transition-all duration-200">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center shrink-0">
-              <Users className="w-5 h-5 sm:w-6 sm:h-6" />
-            </div>
-            <div className="min-w-0">
-              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">10,000+</p>
-              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Verified Drivers</p>
-            </div>
-          </div>
-
-          {/* Stat 2 */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-amber-300 transition-all duration-200">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
               <Building className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
             <div className="min-w-0">
@@ -155,21 +144,32 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Stat 3 */}
+          {/* Stat 2: 100% On-Time Deliveries */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-emerald-300 transition-all duration-200">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
             <div className="min-w-0">
               <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">100%</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">On-Time Deliveries</p>
+            </div>
+          </div>
+
+          {/* Stat 3: 99% Zero-Damage Record */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-amber-300 transition-all duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">99%</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1 truncate">Zero-Damage Record</p>
             </div>
           </div>
 
-          {/* Stat 4 */}
+          {/* Stat 4: 24/7 Active Control Desk */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-white hover:border-purple-300 transition-all duration-200">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
-              <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Radio className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
             <div className="min-w-0">
               <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-none whitespace-nowrap">24/7</p>
@@ -247,14 +247,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. VISUAL LOGIXPRESS-STYLE CORE SERVICES GRID */}
-      <section className="py-20 sm:py-28 bg-white">
+      {/* 5. FLEET TONNAGE SHOWCASE (A TRUCK FOR EVERY TONNAGE) */}
+      <section className="py-20 bg-white border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>
-              <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 block mb-2">
-                Core Service Capabilities
-              </span>
+              <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#FF7A00] mb-2">
+                <Truck className="w-3.5 h-3.5" />
+                <span>Our Fleet • Your Flexibility</span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+                A truck for every tonnage.
+              </h2>
+            </div>
+            <p className="text-slate-600 max-w-md text-sm sm:text-base leading-relaxed">
+              From 14 FT closed bodies to 40-ton trailers — pick the exact vehicle your consignment demands.
+            </p>
+          </div>
+
+          {/* 10 Vehicle Tonnage Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 sm:gap-4 mb-10">
+            {[
+              { size: '14 FT', spec: 'CLOSED / OPEN', payload: 'up to 4 Ton' },
+              { size: '17 FT', spec: 'CLOSED / OPEN', payload: 'up to 5 Ton' },
+              { size: '20 FT', spec: 'CLOSED / OPEN', payload: 'up to 7 Ton' },
+              { size: '22 FT', spec: 'CLOSED / OPEN', payload: 'up to 10 Ton' },
+              { size: '32 FT', spec: 'SINGLE AXLE', payload: 'up to 7 Ton' },
+              { size: '32 FT', spec: 'MULTI AXLE', payload: 'up to 18 Ton' },
+              { size: 'OPEN BODY', spec: 'FLATBED', payload: 'Oversized Loads' },
+              { size: 'CONTAINER', spec: 'ENCLOSED', payload: 'Secure Cargo' },
+              { size: 'TRAILER', spec: 'HEAVY HAUL', payload: '20 - 40 Ton' },
+              { size: 'TAURUS', spec: 'MULTI AXLE', payload: 'High Payload' },
+            ].map((truck, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-sm hover:shadow-lg hover:border-[#FF7A00] transition-all group flex flex-col justify-between"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#FF7A00] flex items-center justify-center">
+                    <Truck className="w-4 h-4" />
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-400">0{idx + 1}</span>
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight group-hover:text-[#FF7A00] transition-colors">
+                    {truck.size}
+                  </h3>
+                  <p className="text-[11px] font-bold text-[#FF7A00] uppercase tracking-wider mt-0.5">
+                    {truck.spec}
+                  </p>
+                  <p className="text-xs text-slate-500 font-medium mt-1">
+                    {truck.payload}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Branded Visual Fleet Infographic Banner */}
+          <div className="relative w-full rounded-3xl overflow-hidden border border-slate-200 shadow-xl bg-slate-50">
+            <div className="relative w-full h-[240px] sm:h-[360px] md:h-[460px]">
+              <Image
+                src="/images/vt_fleet_showcase.png"
+                alt="Value Trust Logistic Services - Our Fleet. Your Flexibility."
+                fill
+                className="object-contain object-center"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. CORE SERVICE CAPABILITIES (ENTERPRISE TRANSPORTATION PORTFOLIO - 2 CARDS) */}
+      <section className="py-20 sm:py-28 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF7A00]">
+                  Core Service Capabilities
+                </span>
+                <span className="w-8 h-[2px] bg-[#FF7A00]" />
+              </div>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
                 Enterprise Transportation Portfolio
               </h2>
@@ -264,175 +338,223 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1: Jockey Movement with HD Bus Image */}
-            <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
-              <div className="relative h-64 w-full overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card 1: FTL Road Transportation */}
+            <div className="group rounded-3xl overflow-hidden bg-slate-950 shadow-xl border border-slate-200/80 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden">
                 <Image
-                  src="/images/ev_bus_flagship.jpg"
-                  alt="Pan-India EV Bus & Commercial Coach Jockey Movement"
+                  src="/images/truck_freight_hd.jpg"
+                  alt="Full Truckload (FTL) Road Transportation"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#FF7A00] text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  01 // EV BUS &amp; COACH JOCKEY
-                </span>
-              </div>
-              <div className="p-7 bg-white flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">
-                    EV Bus &amp; Coach Jockey Movement
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
+                
+                {/* Top Badges */}
+                <div className="absolute top-4 left-4 flex flex-col gap-1.5">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
+                    <Truck className="w-3.5 h-3.5" />
+                    <span>1. FTL LOAD TRANSPORTATION</span>
+                  </span>
+                  <span className="text-[10px] font-extrabold text-blue-200 tracking-wider uppercase ml-1">
+                    YOUR LOAD | OUR PRIORITY
+                  </span>
+                </div>
+
+                {/* Bottom Content Inset */}
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-2xl font-extrabold text-white mb-2 group-hover:text-sky-300 transition-colors">
+                    Full Truckload (FTL) Road Transportation
                   </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Professional behind-the-wheel driveaway. We physically pilot electric buses, luxury commercial coaches, and chassis safely across interstate corridors with zero flatbed transit damage.
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                    We provide dedicated vehicles for full truckload consignments, ensuring safe, on-time and efficient delivery across locations.
                   </p>
+                  
+                  {/* 3 Pills */}
+                  <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-white/15">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
+                      <span>Safe &amp; Secure</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <Clock className="w-3.5 h-3.5 text-amber-400" />
+                      <span>On-Time Delivery</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Pan India Coverage</span>
+                    </span>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-600">
-                  <Link href="/services#jockey-movement" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>Explore EV Bus Operations</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </Link>
-                </div>
+              </div>
+
+              <div className="p-5 bg-white flex items-center justify-between">
+                <button
+                  type="button"
+                  onClick={openModal}
+                  className="text-xs font-extrabold text-brand-600 hover:text-brand-700 flex items-center gap-1 uppercase tracking-wider"
+                >
+                  <span>Book FTL Truck Placement</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                <span className="text-xs font-semibold text-slate-400">1 to 40 Tons Available</span>
               </div>
             </div>
 
-            {/* Card 2: Heavy Commercial & Indian EV Trucks */}
-            <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
-              <div className="relative h-64 w-full overflow-hidden">
+            {/* Card 2: Jockey Movement */}
+            <div className="group rounded-3xl overflow-hidden bg-slate-950 shadow-xl border border-slate-200/80 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-72 sm:h-80 w-full overflow-hidden">
                 <Image
-                  src="/images/truck_bharatbenz_hd.jpg"
-                  alt="Heavy Commercial and Indian EV Trucks"
+                  src="/images/jockey_bus.jpg"
+                  alt="Jockey Movement & Skilled Driver Support"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  02 // HEAVY &amp; EV TRUCKS
-                </span>
-              </div>
-              <div className="p-7 bg-white flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">
-                    Heavy Commercial &amp; EV Truck Freight
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Multi-axle line-haul haulage, industrial container transport, and next-generation Indian EV truck deployment engineered for automotive OEMs and FMCG manufacturing corridors.
-                  </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
+                
+                {/* Top Badges */}
+                <div className="absolute top-4 left-4 flex flex-col gap-1.5">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
+                    <Compass className="w-3.5 h-3.5" />
+                    <span>2. JOCKEY MOVEMENT</span>
+                  </span>
+                  <span className="text-[10px] font-extrabold text-emerald-200 tracking-wider uppercase ml-1">
+                    DRIVER SUPPORT | FLEXIBLE MOBILITY
+                  </span>
                 </div>
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-600">
-                  <Link href="/services#fleet-operations" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>Explore Freight Solutions</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </div>
-            </div>
 
-            {/* Card 3: Chassis Delivery & Driveaway Relocation */}
-            <div className="group rounded-3xl overflow-hidden bg-slate-900 shadow-xl border border-slate-200/60 flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
-              <div className="relative h-64 w-full overflow-hidden">
-                <Image
-                  src="/images/truck_chassis_hd.jpg"
-                  alt="Chassis Delivery and OEM Driveaway Movement"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-brand-600 text-white text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                  03 // CHASSIS &amp; DRIVEAWAY
-                </span>
-              </div>
-              <div className="p-7 bg-white flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors">
-                    Chassis Delivery &amp; Driveaway Relocation
+                {/* Bottom Content Inset */}
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-2xl font-extrabold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                    Jockey Movement
                   </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                    Direct road delivery of bare truck and bus chassis from OEM plants to bodybuilding yards and regional logistics terminals with end-to-end telemetry and vetted drivers.
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                    We provide skilled drivers and jockey movement services to ensure smooth and timely vehicle movement between locations as per your requirements.
                   </p>
+                  
+                  {/* 3 Pills */}
+                  <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-white/15">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <Users className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Skilled Drivers</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <Navigation className="w-3.5 h-3.5 text-sky-400" />
+                      <span>Flexible Routes</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-xs font-bold text-white">
+                      <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Reliable Operations</span>
+                    </span>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-600">
-                  <Link href="/services#driver-deployment" className="flex items-center gap-1 hover:gap-2 transition-all">
-                    <span>View Chassis Protocols</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </Link>
-                </div>
+              </div>
+
+              <div className="p-5 bg-white flex items-center justify-between">
+                <button
+                  type="button"
+                  onClick={openModal}
+                  className="text-xs font-extrabold text-emerald-600 hover:text-emerald-700 flex items-center gap-1 uppercase tracking-wider"
+                >
+                  <span>Request Jockey Driver Crew</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                <span className="text-xs font-semibold text-slate-400">EV Bus &amp; Trucks Supported</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 6. OPERATIONAL WORKFLOW (ELEVATED CONNECTED STAGES) */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200/80">
+      {/* 7. STANDARD OPERATING PROCEDURE (8-STAGE SOP) */}
+      <section className="py-24 bg-white border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-brand-600 block mb-2">
-              EXECUTION RIGOR
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF7A00] block mb-2">
+              OUR PROCESS
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
               Standard Operating Procedure
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              From contract scoping to terminal handover, our 4-stage process guarantees zero highway losses and total compliance.
+              From contract scoping to terminal handover, our step-by-step process guarantees zero highway losses and complete customer satisfaction.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 relative">
             {[
               {
                 step: '01',
-                title: 'UNDERSTAND',
-                sub: 'Audit & Scope',
-                desc: 'Detailed assessment of vehicle parameters, origin-destination checkpoints, axle limits, and crew endorsements.',
+                title: 'Understand Customer Requirement',
+                desc: 'We first understand your load, cargo type, destination, timeline and special needs.',
                 icon: FileCheck,
-                color: 'from-blue-600 to-indigo-700',
+                color: 'bg-blue-600 text-white',
               },
               {
                 step: '02',
-                title: 'PLAN',
-                sub: 'Corridors & Safety',
-                desc: 'Toll corridor validation, green tax route mapping, highway rest-stop scheduling, and statutory e-way bills.',
+                title: 'Plan & Route Mapping',
+                desc: 'We analyze the best routes, distance, transit time and possible alternatives.',
                 icon: MapPin,
-                color: 'from-brand-600 to-blue-700',
+                color: 'bg-emerald-600 text-white',
               },
               {
                 step: '03',
-                title: 'DEPLOY',
-                sub: 'Field Marshalling',
-                desc: 'Driver dispatch, 36-point photographic pre-trip inspection, fuel/odometer recording, and signed manifest handover.',
-                icon: Truck,
-                color: 'from-amber-500 to-orange-600',
+                title: 'Availability Check',
+                desc: 'We check vehicle availability, fleet capacity and driver readiness as per your requirement.',
+                icon: Gauge,
+                color: 'bg-purple-600 text-white',
               },
               {
                 step: '04',
-                title: 'SUPPORT',
-                sub: 'Control Room Desk',
-                desc: '24/7 central oversight from Jhajjar HQ, real-time corridor milestone check-ins, and instantaneous escalation management.',
-                icon: Clock,
-                color: 'from-emerald-600 to-teal-700',
+                title: 'Vehicle Placement',
+                desc: 'Once confirmed, we allocate the right vehicle from our fleet (1–40 Ton) based on your load & route.',
+                icon: Truck,
+                color: 'bg-amber-500 text-white',
+              },
+              {
+                step: '05',
+                title: 'Jockey Movement & Driver Alignment',
+                desc: 'If required, we align professional drivers, handle jockey movement and guide them with full route details.',
+                icon: Users,
+                color: 'bg-sky-600 text-white',
+              },
+              {
+                step: '06',
+                title: 'Execute',
+                desc: 'The vehicle is dispatched and movement is closely monitored until delivery.',
+                icon: Navigation,
+                color: 'bg-indigo-600 text-white',
+              },
+              {
+                step: '07',
+                title: '24/7 SLA Support',
+                desc: 'Our team stays active 24/7 to ensure smooth movement, real-time updates and quick issue resolution.',
+                icon: Radio,
+                color: 'bg-rose-600 text-white',
+              },
+              {
+                step: '08',
+                title: 'Successful Delivery',
+                desc: 'We ensure safe, on-time delivery with complete compliance and customer satisfaction.',
+                icon: Award,
+                color: 'bg-emerald-600 text-white',
               },
             ].map((st, idx) => (
               <div
                 key={st.step}
-                className="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-2xl hover:border-brand-400 transition-all duration-300 flex flex-col justify-between group relative"
+                className="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-[#FF7A00] transition-all duration-300 flex flex-col justify-between group relative"
               >
-                {/* Top stage accent pill */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${st.color} text-white font-extrabold text-base flex items-center justify-center shadow-md`}>
-                    {st.step}
-                  </div>
-                  <div className="w-10 h-10 rounded-xl bg-slate-50 group-hover:bg-brand-50 flex items-center justify-center text-slate-400 group-hover:text-brand-600 transition-colors">
-                    <st.icon className="w-5 h-5" />
-                  </div>
-                </div>
-
                 <div>
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider text-brand-600 block mb-1">
-                    {st.sub}
-                  </span>
-                  <h3 className="text-xl font-extrabold text-slate-900 uppercase tracking-tight mb-3">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className={`w-10 h-10 rounded-2xl ${st.color} font-extrabold text-sm flex items-center justify-center shadow-md`}>
+                      {st.step}
+                    </span>
+                    <div className="w-9 h-9 rounded-xl bg-slate-50 group-hover:bg-orange-50 flex items-center justify-center text-slate-400 group-hover:text-[#FF7A00] transition-colors">
+                      <st.icon className="w-4 h-4" />
+                    </div>
+                  </div>
+
+                  <h3 className="text-base font-extrabold text-slate-900 tracking-tight mb-2 leading-snug">
                     {st.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -440,8 +562,8 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-400 group-hover:text-brand-600 transition-colors">
-                  <span>Stage {idx + 1} of 4</span>
+                <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-400 group-hover:text-[#FF7A00] transition-colors">
+                  <span>Stage {idx + 1} of 8</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
