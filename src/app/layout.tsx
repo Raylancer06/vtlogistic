@@ -31,7 +31,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'VT Logistic Services' }],
   icons: {
-    icon: '/images/logo.jpeg',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 
