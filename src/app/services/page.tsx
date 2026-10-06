@@ -251,9 +251,9 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* 5 ELEVATED USE CASE CARDS (Addressing Image 3 improvements) */}
+          {/* 5 ELEVATED USE CASE CARDS */}
           <div className="mb-4">
-            <h3 className="text-2xl font-extrabold text-slate-900 mb-2">Key Jockey Movement Use Cases</h3>
+            <h3 className="text-2xl font-extrabold text-slate-900 mb-2">Key Vehicle Movement Solutions</h3>
             <p className="text-xs sm:text-sm text-slate-500 mb-8">
               Click any category to initiate immediate vehicle allocation or corridor quote.
             </p>

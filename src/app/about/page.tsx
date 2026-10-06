@@ -512,7 +512,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Ready to Upgrade Your Commercial Fleet Operations?
+              Ready to Upgrade Your Fleet Operations?
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
