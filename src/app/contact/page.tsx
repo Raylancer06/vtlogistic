@@ -31,7 +31,7 @@ export default function ContactPage() {
     company: '',
     phone: '',
     email: '',
-    service: 'Jockey Movement',
+    service: 'Full Truck Load',
     origin: '',
     destination: '',
     details: '',
@@ -409,11 +409,9 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF7A00] focus:border-transparent bg-white transition-all font-medium"
                     >
-                      <option value="Jockey Movement">Jockey Movement (Bare Chassis / Coach Driveaway)</option>
-                      <option value="Fleet Operations">Dedicated Fleet Operations Management</option>
-                      <option value="Driver Deployment">Commercial Driver Deployment (Spot / Monthly)</option>
-                      <option value="Vehicle Relocation">Depot / Yard Vehicle Relocation</option>
-                      <option value="Custom Enterprise Solution">Custom Enterprise Mobility SLA</option>
+                      <option value="Full Truck Load">Full Truck Load</option>
+                      <option value="Jockey Movement">Jockey Movement</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
 
